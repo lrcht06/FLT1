@@ -20,7 +20,7 @@ This portfolio demonstrates the use of MySQL to model and query a multi-level co
 
 - #### Task 3 – Create the `employee_departments` table
   - Define `employee_id` as an integer and assign it as a foreign key linked to the `employees` table.
-  - Define department_id` as an integer and assign it as a foreign key linked to the `departments` table.
+  - Define `department_id` as an integer and assign it as a foreign key linked to the `departments` table.
   - Set both `employee_id` and `department_id` as a composite primary key to uniquely identify each employee-department assignment.
 
 - #### Task 4 – Create the `employee_projects` table
