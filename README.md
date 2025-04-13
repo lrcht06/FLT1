@@ -1,6 +1,8 @@
 # Finals Lab Task 1
 This portfolio demonstrates the use of MySQL to model and query a multi-level company database. The task focuses on creating relational tables, inserting data, writing basic queries, and visualizing the structure with an ER diagram using phpMyAdmin or MySQL Workbench.
 
+---
+
 ## STEP BY STEP PROCESS
 ### STEP 1. Open MySQL Workbench or phpMyAdmin as well as the XAMPP.
 
@@ -29,6 +31,8 @@ This portfolio demonstrates the use of MySQL to model and query a multi-level co
   - Set manager_id as an integer that auto-increments and acts as the primary key.
   - Add employee_id as an integer that functions as a foreign key, linking each manager to an existing employee in the employees table.
 
+---
+
 ## Query Statements (Screenshots)
 - ### Task 1
 ![screenshot](images/FLT1(T1).png)
@@ -40,6 +44,8 @@ This portfolio demonstrates the use of MySQL to model and query a multi-level co
 ![screenshot](images/FLT1(T4).png)
 - ### Task 5
 ![screenshot](images/FLT1(T5).png)
+
+---
 
 ## Table Structures (Screenshots)
 - ### Table 1
@@ -53,10 +59,16 @@ This portfolio demonstrates the use of MySQL to model and query a multi-level co
 - ### Table 5
 ![screenshot](images/FLT1(tbl5).png)
 
+---
+
 ## EER Diagram (Screenshot)
 ![screenshot](images/FLT1(EER_Diagram).png)
 
+---
+
 ## SQL Copy (File)
+
+---
 
 
 
