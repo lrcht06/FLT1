@@ -4,7 +4,7 @@ This portfolio demonstrates the use of MySQL to model and query a multi-level co
 ---
 
 ## STEP BY STEP PROCESS
-### STEP 1. Open MySQL Workbench or phpMyAdmin as well as the XAMPP.
+### STEP 1. Open MySQL Workbench or phpMyAdmin and start XAMPP to activate MySQL.
 
 ### STEP 2. Create a database to store the following tasks.
 
