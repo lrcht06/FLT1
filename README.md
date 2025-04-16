@@ -69,8 +69,6 @@ This portfolio demonstrates the use of MySQL to model and query a multi-level co
 ---
 
 ## SQL Copy (File)
-> 📂
-
 
 ---
 
