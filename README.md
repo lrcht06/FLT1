@@ -1,4 +1,4 @@
-# Finals Lab Task 1
+# Finals Lab Task 1: MySQL Basics
 This portfolio demonstrates the use of MySQL to model and query a multi-level company database. The task focuses on creating relational tables, inserting data, writing basic queries, and visualizing the structure with an ER diagram using phpMyAdmin or MySQL Workbench.
 
 ---
