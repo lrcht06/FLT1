@@ -22,7 +22,6 @@
     <hr />
 
     <h2 class="clickable">STEP BY STEP PROCESS</h2>
-
     <h3>STEP 1</h3>
     <p>Open MySQL Workbench or phpMyAdmin and start XAMPP to activate MySQL.</p>
 
@@ -30,43 +29,25 @@
     <p>Create a database to store the following tasks.</p>
 
     <h3>STEP 3</h3>
+    <p>For each of the following tasks, write and execute the appropriate SQL query:</p>
     <ul>
-      <li><strong>Task 1</strong> – Create the <code>employees</code> table
-        <ul>
-          <li>Define <code>employee_id</code> as an integer that auto-increments and serves as the table’s primary key.</li>
-          <li>Add <code>employee_name</code> as a text field using VARCHAR(255), and ensure it is not nullable.</li>
-          <li>Introduce <code>manager_id</code> as an integer that acts as a foreign key referencing <code>employee_id</code> within the same table, enabling hierarchical reporting structures.</li>
-        </ul>
-      </li>
-
-      <li><strong>Task 2</strong> – Create the <code>departments</code> table
-        <ul>
-          <li>Establish <code>department_id</code> as an integer with auto-increment and designate it as the primary key.</li>
-          <li>Include <code>department_name</code> as a VARCHAR(255) field, which must not be null.</li>
-        </ul>
-      </li>
-
-      <li><strong>Task 3</strong> – Create the <code>employee_departments</code> table
-        <ul>
-          <li>Define <code>employee_id</code> as an integer and assign it as a foreign key linked to the <code>employees</code> table.</li>
-          <li>Define <code>department_id</code> as an integer and assign it as a foreign key linked to the <code>departments</code> table.</li>
-          <li>Set both <code>employee_id</code> and <code>department_id</code> as a composite primary key to uniquely identify each employee-department assignment.</li>
-        </ul>
-      </li>
-
-      <li><strong>Task 4</strong> – Create the <code>employee_projects</code> table
-        <ul>
-          <li>Define <code>employee_id</code> as an integer foreign key that references the <code>employees</code> table.</li>
-          <li>Add <code>project_name</code> as a VARCHAR(255) field that is required (NOT NULL).</li>
-        </ul>
-      </li>
-
-      <li><strong>Task 5</strong> – Create the <code>managers</code> table
-        <ul>
-          <li>Set <code>manager_id</code> as an integer that auto-increments and acts as the primary key.</li>
-          <li>Add <code>employee_id</code> as an integer that functions as a foreign key, linking each manager to an existing employee in the <code>employees</code> table.</li>
-        </ul>
-      </li>
+      <li><strong>Task 1 – Create the <code>employees</code> table</strong> 
+          - Define `employee_id` as an integer that auto-increments and serves as the table’s primary key.</li>
+          - Add `employee_name` as a text field using VARCHAR(255), and ensure it is not nullable.</li>
+          - Introduce `manager_id` as an integer that acts as a foreign key referencing `employee_id` within the same table, enabling hierarchical reporting structures.</li>
+      <li><strong>Task 2 – Create the <code>departments</code> table</strong> 
+        - Establish `department_id` as an integer with auto-increment and designate it as the primary key.</li>
+        - Include `department_name` as a VARCHAR(255) field, which must not be null.</li>
+      <li><strong>Task 3 – Create the <code>employee_departments</code> table</strong> 
+        - Define `employee_id` as an integer and assign it as a foreign key linked to the `employees` table.</li>
+        - Define `department_id` as an integer and assign it as a foreign key linked to the `departments` table.</li>
+        - Set both `employee_id` and `department_id` as a composite primary key to uniquely identify each employee-department assignment.</li>
+      <li><strong>Task 4 – Create the <code>employee_projects</code> table</strong> 
+        - Define `employee_id` as an integer foreign key that references the `employees` table.</li>
+        - Add `project_name` as a VARCHAR(255) field that is required (NOT NULL).</li>
+      <li><strong>Task 5 – Create the <code>managers</code> table</strong> 
+        - Set `manager_id` as an integer that auto-increments and acts as the primary key.</li>
+        - Add `employee_id` as an integer that functions as a foreign key, linking each manager to an existing employee in the `employees` table.</li>
     </ul>
 
     <hr />
@@ -103,24 +84,12 @@
 
     <hr />
 
-    <h2 class="clickable">EER Diagram (Screenshot)</h2>
-    <div class="image-column">
-      <img src="images/FLT1(EER_Diagram).png" alt="EER Diagram" />
-    </div>
-
-    <hr />
-
     <h2 class="clickable">SQL Copy (File)</h2>
     <p>
       <a class="file-link" href="files/L.E.%20Turla%20(FLT1_Code).sql" download>
         📂 L.E.Turla (Finals Lab Task 1 Code)
       </a>
     </p>
-  </div>
-
-  <audio class="click-sound" id="click-sound">
-    <source src="assets/click.mp3" type="audio/mp3">
-  </audio>
 
   <script>
     document.addEventListener("mousemove", (e) => {
@@ -132,12 +101,8 @@
       setTimeout(() => trail.remove(), 1000);
     });
 
-    const clickSound = document.getElementById("click-sound");
     document.querySelectorAll(".clickable").forEach(el => {
       el.addEventListener("click", () => {
-        el.scrollIntoView({ behavior: "smooth", block: "center" });
-        clickSound.currentTime = 0;
-        clickSound.play();
         el.classList.add("clicked");
         setTimeout(() => el.classList.remove("clicked"), 300);
       });
